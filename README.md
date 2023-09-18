@@ -43,7 +43,7 @@ Before starting training, ROI region needs to be cropped and normalized. You can
 cd ALMSS
 python preprocessing.py
 ```
-An Excel file (), which stores information on gender, age, and labels, is required and is presented in the format below:
+An Excel file (metadata.xlsx), which stores information on gender, age, and labels, is required and is presented in the format below:
 
 | ID | age | sex | label |
 | :-----: | :----: | :----: | :----: |
@@ -53,3 +53,16 @@ An Excel file (), which stores information on gender, age, and labels, is requir
 | ... | ... | ... | ... |
 
 where the labels are the tumor source (1-Intestine; 2-Lung; 3-Breast; 4-Oesophagogastric; 5-Pancreatobiliary; 6-Reproductive; 7-HCC; 8-ICC).
+All data is split into training, validation, and test sets. The respective patient IDs are saved in the .txt file for each subset. Please place the Excel and .txt files in the **relevant_files** folder：
+```
+- relevant_files
+  - metadata.xlsx
+  - train.txt
+  - val.txt
+  - test.txt
+- data
+- README.md
+- ...
+```
+
+## Model training
