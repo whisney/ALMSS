@@ -44,10 +44,8 @@ cd ALMSS
 python preprocessing.py
 ```
 An Excel file, which stores information on gender, age, and labels, is required and is presented in the format below:
-```
-| ID     | age     | sex     |
-| -------- | -------- | -------- |
-| 行1，列1 | 行1，列2 | 行1，列3 |
-| 行2，列1 | 行2，列2 | 行2，列3 |
-| 行3，列1 | 行3，列2 | 行3，列3 |
-```
+
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
