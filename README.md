@@ -12,7 +12,7 @@ This is the repository for the paper "Automatic and noninvasive origin diagnosis
 * SimpleITK
 
 ## ROIs segmentation
-First, the ROIs of the liver and tumors in CT images across four phases are segmented either manually or automatically. The original CT image and segmentation mask are placed in the **data** folder in the following form and name:
+First, the ROIs of the liver and tumors in CT images across four phases are segmented either manually or automatically. The original CT image and segmentation mask should be placed in the **data** folder in the following form and name:
 ```
 - data
   - ID001
@@ -36,3 +36,10 @@ First, the ROIs of the liver and tumors in CT images across four phases are segm
 - ...
 ```
 We used [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) to train the models for automatic segmentation of liver and tumors. Specifically, we used the entire abdominal CT image as input for the liver segmentation model. In contrast, for the liver tumor segmentation model, we employed only the segmented ROI of the liver as input. Both models were trained in a 3D full-resolution mode.
+
+## Data preprocessing
+Before starting training, ROI region needs to be cropped and normalized. You can run this step with the following command:
+```
+cd ALMSS
+python preprocessing.py
+```
