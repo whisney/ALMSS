@@ -67,6 +67,6 @@ All data is split into training, validation, and test sets. The respective patie
 - README.md
 - ...
 ```
-where '**_metastatic.txt' are subsets of '**_primary.txt', with HCC and ICC patient IDs removed.
+where 'xx_metastatic.txt' are subsets of 'xx_primary.txt', with HCC and ICC patient IDs removed.
 
 ## Model training
