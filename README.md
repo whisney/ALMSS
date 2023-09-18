@@ -31,9 +31,8 @@ First, the ROIs of the liver and tumors in CT images across four phases are segm
       - ID002
         - ...
       - ...
-  
   - README.md
   - LICENSE
   - ...
 
-We used nnUNet
+We used [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) to train the models for automatic segmentation of liver and tumors. Specifically, we used the entire abdominal CT image as input for the liver segmentation model. In contrast, for the liver tumor segmentation model, we employed only the segmented ROI of the liver as input. Both models were trained in a 3D full-resolution mode.
