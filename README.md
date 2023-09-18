@@ -12,7 +12,7 @@ This is the repository for the paper "Automatic and noninvasive origin diagnosis
 * SimpleITK
 
 ## ROIs segmentation
-First, the ROIs of the liver and tumors in CT images across four phases are segmented either manually or automatically. The original CT image and segmentation mask should be placed in the **data** folder in the following form and name:
+First, the ROIs of the liver and tumors in CT images across four phases are segmented either manually or automatically. The original CT images and segmentation masks should be placed in the **data** folder in the following form and name:
 ```
 - data
   - ID001
@@ -43,3 +43,9 @@ Before starting training, ROI region needs to be cropped and normalized. You can
 cd ALMSS
 python preprocessing.py
 ```
+An Excel file, which stores information on gender, age, and labels, is required and is presented in the format below:
+| ID     | age     | sex     |
+| -------- | -------- | -------- |
+| 行1，列1 | 行1，列2 | 行1，列3 |
+| 行2，列1 | 行2，列2 | 行2，列3 |
+| 行3，列1 | 行3，列2 | 行3，列3 |
