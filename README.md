@@ -43,11 +43,13 @@ Before starting training, ROI region needs to be cropped and normalized. You can
 cd ALMSS
 python preprocessing.py
 ```
-An Excel file, which stores information on gender, age, and labels, is required and is presented in the format below:
+An Excel file (), which stores information on gender, age, and labels, is required and is presented in the format below:
+
 | ID | age | sex | label |
 | :-----: | :----: | :----: | :----: |
 | ID001 | 53 | male | 1 |
 | ID002 | 51 | female | 2 |
 | ID003 | 39 | male | 5 |
 | ... | ... | ... | ... |
-where 
+
+where the labels are the tumor source (1-Intestine; 2-Lung; 3-Breast; 4-Oesophagogastric; 5-Pancreatobiliary; 6-Reproductive; 7-HCC; 8-ICC).
