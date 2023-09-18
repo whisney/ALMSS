@@ -53,7 +53,7 @@ An Excel file (metadata.xlsx), which stores information on gender, age, and labe
 | ... | ... | ... | ... |
 
 where the labels are the tumor source (1-Intestine; 2-Lung; 3-Breast; 4-Oesophagogastric; 5-Pancreatobiliary; 6-Reproductive; 7-HCC; 8-ICC).
-All data is split into training, validation, and test sets. The respective patient IDs are saved in the .txt file for each subset. Noting that the data used for differentiating metastatic tumors from primary tumors and for identifying the source of metastatic tumors are distinct. ICC and HCC patients are solely utilized for training primary/metastatic tumors discriminating model. Please place the Excel and .txt files in the **relevant_files** folder：
+All data is split into training, validation, and test sets. The respective patient IDs are saved in the .txt file for each subset. Please place the Excel and .txt files in the **relevant_files** folder：
 ```
 - relevant_files
   - metadata.xlsx
@@ -67,6 +67,5 @@ All data is split into training, validation, and test sets. The respective patie
 - README.md
 - ...
 ```
-where 'xx_metastatic.txt' are subsets of 'xx_primary.txt', with HCC and ICC patient IDs removed.
 
 ## Model training
