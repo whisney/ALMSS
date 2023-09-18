@@ -6,6 +6,7 @@ This is the repository for the paper "Automatic and noninvasive origin diagnosis
 ## Requirements
 * python 3.6
 * pytorch 1.5+
+* pandas
 * scikit-learn
 * scikit-image
 * tensorboardX
@@ -69,3 +70,21 @@ All data is split into training, validation, and test sets. The respective patie
 ```
 
 ## Model training
+For training primary/metastatic tumors classification model, you can run:
+```
+python train_primary.py --gpu 0 --bs 10 --epoch 200 --seed 42
+```
+For training classification model of metastatic tumor source, you can run:
+```
+python train_metastatic.py --gpu 0 --bs 10 --epoch 200 --seed 42
+```
+
+## Model evaluation
+To evaluate the two models, you can run:
+```
+# for primary/metastatic tumors classification model
+python evaluate_primary.py --gpu 0 --model_path trained_models/primary_tumor/bs10_epoch200_seed42/best_AUC_val.pth --set test
+
+# for classification model of metastatic tumor source
+python evaluate_metastatic.py --gpu 0 --model_path trained_models/metastatic_tumor/bs10_epoch200_seed42/best_AUC_val.pth --set test
+```
