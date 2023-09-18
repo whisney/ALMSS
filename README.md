@@ -45,9 +45,9 @@ python preprocessing.py
 ```
 An Excel file, which stores information on gender, age, and labels, is required and is presented in the format below:
 
-| ID | age | seg |
-| :-----| ----: | :----: |
-| ID001 | 单元格 | 单元格 |
-| ID002 | 单元格 | 单元格 |
-| ID003 | 单元格 | 单元格 |
-| ... | 单元格 | 单元格 |
+| ID | age | sex | label |
+| :-----| ----: | :----: | :----: |
+| ID001 | 53 | male | 1 |
+| ID002 | 51 | female | 2 |
+| ID003 | 39 | male | 5 |
+| ... | ... | ... | ... |
