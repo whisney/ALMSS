@@ -13,26 +13,26 @@ This is the repository for the paper "Automatic and noninvasive origin diagnosis
 
 ## ROIs segmentation
 First, the ROIs of the liver and tumors in CT images across four phases are segmented either manually or automatically. The original CT image and segmentation mask are placed in the **data** folder in the following form and name:
-```c
-    - data
-      - ID001
-        - Plain_img.nii.gz
-        - Plain_liver_mask.nii.gz
-        - Plain_Tumor_mask.nii.gz
-        - Arterial_img.nii.gz
-        - Arterial_liver_mask.nii.gz
-        - Arterial_Tumor_mask.nii.gz
-        - Venous_img.nii.gz
-        - Venous_liver_mask.nii.gz
-        - Venous_Tumor_mask.nii.gz
-        - Delay_img.nii.gz
-        - Delay_liver_mask.nii.gz
-        - Delay_Tumor_mask.nii.gz
-      - ID002
-        - ...
-      - ...
-    - README.md
-    - LICENSE
+```
+- data
+  - ID001
+    - Plain_img.nii.gz
+    - Plain_liver_mask.nii.gz
+    - Plain_Tumor_mask.nii.gz
+    - Arterial_img.nii.gz
+    - Arterial_liver_mask.nii.gz
+    - Arterial_Tumor_mask.nii.gz
+    - Venous_img.nii.gz
+    - Venous_liver_mask.nii.gz
+    - Venous_Tumor_mask.nii.gz
+    - Delay_img.nii.gz
+    - Delay_liver_mask.nii.gz
+    - Delay_Tumor_mask.nii.gz
+  - ID002
     - ...
+  - ...
+- README.md
+- LICENSE
+- ...
 ```
 We used [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) to train the models for automatic segmentation of liver and tumors. Specifically, we used the entire abdominal CT image as input for the liver segmentation model. In contrast, for the liver tumor segmentation model, we employed only the segmented ROI of the liver as input. Both models were trained in a 3D full-resolution mode.
