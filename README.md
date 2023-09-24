@@ -58,12 +58,9 @@ All data is split into training, validation, and test sets. The respective patie
 ```
 - relevant_files
   - metadata.xlsx
-  - train_primary.txt
-  - val_primary.txt
-  - test_primary.txt
-  - train_metastatic.txt
-  - val_metastatic.txt
-  - test_metastatic.txt
+  - train.txt
+  - val.txt
+  - test.txt
 - data
 - README.md
 - ...
