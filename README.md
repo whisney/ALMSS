@@ -1,5 +1,5 @@
 # ALMSS
-This is the repository for the paper "Automatic and noninvasive origin diagnosis of liver metastases via hierarchical artificial-intelligence system trained on multiphasic CT data".
+This is the repository for the paper "Automatic origin prediction of liver metastases via hierarchical artificial-intelligence system trained on multiphasic CT data: a retrospective, multicentre study".
 
 ![ALMSS](/pic/ALMSS.png)
 
