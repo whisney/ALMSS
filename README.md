@@ -1,7 +1,7 @@
 # ALMSS
 This is the repository for the paper "Automatic origin prediction of liver metastases via hierarchical artificial-intelligence system trained on multiphasic CT data: a retrospective, multicentre study".
 
-![ALMSS](/ALMSS.tif)
+![ALMSS](/pic/ALMSS.png)
 
 ## Requirements
 * python 3.6
