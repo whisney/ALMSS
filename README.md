@@ -85,3 +85,16 @@ python evaluate_primary.py --gpu 0 --model_path trained_models/primary_tumor/bs1
 # for classification model of metastatic tumor source
 python evaluate_metastatic.py --gpu 0 --model_path trained_models/metastatic_tumor/bs10_epoch200_seed42/best_AUC_val.pth --set test
 ```
+
+## Citation
+if you find this repository useful in your research, please consider citing:
+```
+@article{xin2024automatic,
+  title={Automatic origin prediction of liver metastases via hierarchical artificial-intelligence system trained on multiphasic CT data: a retrospective, multicentre study},
+  author={Xin, Hongjie and Zhang, Yiwen and Lai, Qianwei and Liao, Naying and Zhang, Jing and Liu, Yanping and Chen, Zhihua and He, Pengyuan and He, Jian and Liu, Junwei and others},
+  journal={Eclinicalmedicine},
+  volume={69},
+  year={2024},
+  publisher={Elsevier}
+}
+```
