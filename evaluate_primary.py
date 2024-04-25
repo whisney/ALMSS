@@ -69,9 +69,9 @@ with torch.no_grad():
         labels_one_hot = torch.tensor(label).long()
         labels_one_hot = torch.zeros((1, 3)).scatter_(1, labels_one_hot.unsqueeze(0).unsqueeze(0), 1).float()
 
-        if 'male' in gender:
+        if 'male' == gender:
             gender = torch.from_numpy(np.array([1, 0]))
-        elif 'female' in gender:
+        elif 'female' == gender:
             gender = torch.from_numpy(np.array([0, 1]))
 
         age = torch.from_numpy(np.array([age])).float() / 100
