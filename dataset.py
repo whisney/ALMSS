@@ -54,9 +54,9 @@ class Dataset_for_primary_tumor(Dataset):
         age = self.age_list[idx]
         label = self.label_list[idx]
 
-        if 'male' in gender:
+        if 'male' == gender:
             gender = torch.from_numpy(np.array([1, 0]))
-        elif 'female' in gender:
+        elif 'female' == gender:
             gender = torch.from_numpy(np.array([0, 1]))
 
         age = torch.from_numpy(np.array([age])).float() / 100
@@ -139,9 +139,9 @@ class Dataset_for_metastatic_tumor(Dataset):
         age = self.age_list[idx]
         label = self.label_list[idx]
 
-        if 'male' in gender:
+        if 'male' == gender:
             gender = torch.from_numpy(np.array([1, 0]))
-        elif 'female' in gender:
+        elif 'female' == gender:
             gender = torch.from_numpy(np.array([0, 1]))
 
         age = torch.from_numpy(np.array([age])).float() / 100
